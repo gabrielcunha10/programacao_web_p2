@@ -27,7 +27,6 @@ if (file_exists($arquivo_json)) {
 
     if (file_put_contents($arquivo_json, $novo_conteudo_json)) {
         echo "Usuário cadastrado com sucesso!";
-        header('Location: lista_usuarios.php')
     } else {
         echo "Erro ao salvar o usuário.";
     }
